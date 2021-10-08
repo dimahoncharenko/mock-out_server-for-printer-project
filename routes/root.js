@@ -241,4 +241,8 @@ module.exports = async function (fastify, opts) {
   fastify.get("/pricing", async (request, reply) => {
     return { pricing };
   });
+
+  fastify.get("/", async (request, reply) => {
+    return "Welcome to mock out api for printer project!";
+  });
 }
